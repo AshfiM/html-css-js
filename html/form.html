@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>name</title>
+        
+        
+        <!-- open graph protocol
+        <meta property="og:title" content="title">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="image">
+        <meta property="og:url" content="www.website.com">
+        <meta property="og:description" content="description">
+        <meta property="og:locale" content="en_PK">
+        <meta property="og:site_name" content="name"> 
+        -->
+        
+
+        <link rel="stylesheets" href="../css/">
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <form method="POST">
+                <div>
+                    <label for="username">username</label>
+                    <input type="text" id="username" name="username" required minlength="3" maxlength="8">
+                </div>
+
+                <div>
+                    <label for="password">password</label>
+                    <input type="text" id="password" name="password" required minlength="3" maxlength="8">
+                </div>
+                
+                <div>
+                    <label for="phone">phone</label>
+                    <input type="tel" id="phone" name="phone" pattern=”^(?:0|\+?44)(?:\d\s?){9,10}$” > 
+                </div>
+
+                <div>
+                    <fieldset id="table">
+                        <label >
+                            <input type="radio" name="table" value="3" checked> 3 people
+                        </label>
+                        
+                        <label >
+                            <input type="radio" name="table" value="4" > 4 people
+                        </label>
+                        
+                        <label>
+                            <input type="radio" name="table" value="5" > 5 people
+                        </label>
+                        
+    
+                    </fieldset>
+                </div>
+
+                <div>
+                    <label for="date">date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <div>
+                    <label for="no_of_people">no of people</label>
+                    <input type="range" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                    <output>4</output>
+                </div>
+                <div>
+                    <label for="location">Location</label>
+                    <input id="location" name="location" list="locations">
+                    <datalist id="locations">
+                    <option value="loc1">loc1</option>
+                    <option value="loc2">loc2</option>
+                    </datalist>
+                </div>
+                
+                <div>
+                    <button type="submit" >login</button>
+                </div>
+
+            </form>
+
+            <form >
+                <div>
+                  <label for="email" >email</label>
+                  <input type="email" name="email" id="email" required>
+                </div>
+        
+                <div>
+                  <label for="date">date</label>
+                  <input type="date" name="date" id="date" required>
+                </div>
+        
+                <div>
+                  <label for="no_of_people">no of people</label>
+                  <input type="number" name="no_of_people" id="no_of_people" min="1" max="10" required>
+                </div>
+        
+                  <div>
+                    <label>
+                        <input type="checkbox" value="agree" name = "agreement" required> Agree to the terms and conditions
+                    </label>
+                  </div>
+                  <button type="submit">book now</button>
+            </form>
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
