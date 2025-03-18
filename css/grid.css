@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+    grid-auto-flow: dense;
+}
+
+.content {
+    display: grid;
+    background-color: blue;
+}
+

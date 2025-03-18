@@ -1,0 +1,28 @@
+.columns{
+    display: flex;
+    align-items: stretch;
+    height: 400px;
+    max-width: 300px;
+    border: 1px solid;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+
+}
+
+.bar {
+    border-right: 1px solid;
+}
+
+.male {
+    background-color: yellow;
+}
+
+.female {
+    background-color: green;
+}

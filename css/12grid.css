@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.container header {
+    padding: 2em;
+    background-color: blueviolet;
+}
+
+.segment {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    grid-template-rows: 100px;
+    border: 0px solid;
+}
+
+.A {
+    background-color: aquamarine;
+    grid-column: 1 / span 12;
+}
+
+.B {
+    background-color: bisque;
+    grid-column: 5 / span 8;
+}
+
+.C {
+    background-color: blue;
+    grid-column: 3 / span 6;
+
+}
+
+.D {
+    background-color: rebeccapurple;
+    grid-column: 3 / 5;
+}
+
+.E {
+    background-color: darkcyan;
+    grid-column: 5 /  8;
+}
+
+.F {
+    background-color: beige;
+    grid-column: 1/ span 3;
+}

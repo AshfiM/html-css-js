@@ -1,0 +1,17 @@
+div{
+    display: block;
+    width: 300px;
+    
+
+}
+
+article ~ img {
+    width: 200px;
+    object-fit:cover;
+    background-color: antiquewhite;
+}
+
+img + p {
+    box-shadow: inset 1px 1px 5px blue;
+    background-color: bisque;
+}
