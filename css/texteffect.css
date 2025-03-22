@@ -1,0 +1,55 @@
+.text1 {
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: 1px solid red;
+}
+
+.text1:hover {
+    overflow: visible;
+}
+
+.text2 {
+    white-space: nowrap;
+    text-overflow: clip;
+    width: 150px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.text2:hover {
+    overflow: visible;
+}
+
+.text3 {
+    white-space: nowrap;
+    text-overflow: clip;
+    width: 150px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.vert {
+    writing-mode: vertical-lr;
+}
+
+.text4 {
+    width: 150px;
+    overflow: hidden;
+    border: 1px solid red;
+    margin-top: 10px;
+}
+
+.wrap {
+    word-wrap: break-word;
+}
+
+.text5 {
+    width: 150px;
+    overflow: hidden;
+    border: 1px solid red;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px green;
+}
+
